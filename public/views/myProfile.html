@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>ProgramMe</title>
+	<script src = "https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<link rel = "stylesheet" href = "styles/styles.css">
+	<style type="text/css">
+		.search{
+			text-align: center;
+		}
+		.circular--landscape {
+		  	display: inline-block;
+		  	position: relative;
+		  	width: 120px;
+		  	height: 120px;
+		  	overflow: hidden;
+		  	border-radius: 50%;
+		  	border-color: black;
+		}
+
+		#image{		
+			width: auto;
+		 	height: 100%;
+		  	margin-left: -12%;
+
+		}
+	</style>
+</head>
+<body>
+	<div class = "mainButtons">
+		<h3 id ="title">Program Me</h3>
+		<button class = "button" id = "login">Login</button>
+		<button class = "button" id = "signup">Sign Up</button>
+		<button class = "button" id = "browse">Browse</button>
+		<button class = "button" id = "help">Help/FAQ</button>
+		<button class = "button" id = "home">Home</button>
+	</div>
+	<div class = "body">
+		<br>
+		<div class = "circular--landscape">
+			<img id="image"src="" >
+		</div>
+		<p>Bio: <i id = "bio"></i></p> 
+		<p>Username: <i id = "username"></i></p> 
+		<p>Name: <i id = "name"></i></p> 
+		<p>Age: <i id = "age"></i></p> 
+		<p>Experience: <i id = "experiencelvl"></i></p> 
+		<p>Preferred Language: <i id = "lang"></i></p> 
+		<p>Want to update your information? Click <a href="signup">here</a>.</p>
+	</div>
+	<script src="js/myProfile.js"></script>
+</body>
+</html>

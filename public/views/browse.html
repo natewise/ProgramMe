@@ -1,0 +1,136 @@
+<html>
+<head>
+	<title>ProgramMe</title>
+	<script src = "https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<link rel = "stylesheet" href = "styles/styles.css">
+	<style type="text/css">
+		.search{
+			text-align: center;
+		}
+		.match:hover {
+        background-color:rgb(190,135,210);
+      }
+      .match {
+        background-color: rgb(71,120,198);
+        border-radius: 20px;
+        color: white;
+        padding: 10px 19px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-style: bold;
+      }
+      input[type=text], select {
+	   padding: 5px 10px;
+	   margin: 1px 0;
+	   display: inline-block;
+	   border: 1px solid #ccc;
+	   border-radius: 4px;
+	   box-sizing: border-box;
+	}
+	input[type=text]:focus {
+    background-color: lightblue;
+	}
+	input[type=number], select {
+	   padding: 4px 4px;
+	   margin: 8px 0;
+	   display: inline-block;
+	   border: 1px solid #ccc;
+	   border-radius: 4px;
+	}
+	input[type=number]:focus {
+    background-color: lightblue;
+	}
+	#experiencelvl, select {
+	   padding: 4px 4px;
+	   margin: 1px 0;
+	   display: inline-block;
+	   border: 1px solid #ccc;
+	   border-radius: 4px;
+	}
+	#experiencelvl:focus {
+    	background-color: lightblue;
+	}
+	#PL, select {
+	   padding: 4px 4px;
+	   margin: 1px 0;
+	   display: inline-block;
+	   border: 1px solid #ccc;
+	   border-radius: 4px;
+	}
+	#PL:focus {
+    	background-color: lightblue;
+	}
+	.profile:hover {
+        background-color:rgb(90,135,210);
+      }
+      .profile {
+        background-color: rgb(111,120,198);
+        border-radius: 30px;
+        color: white;
+        padding: 5px 11px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        font-style: bold;
+      }
+	</style>
+</head>
+<body>
+	<div class = "mainButtons">
+		<h3 id ="title">Program Me</h3>
+		<button class = "button" id = "login">Login</button>
+		<button class = "button" id = "signup">Sign Up</button>
+		<button class = "button" id = "browse">Browse</button>
+		<button class = "button" id = "help">Help/FAQ</button>
+		<button class = "button" id = "home">Home</button>
+	</div>
+	<div class = "body">
+		<p id = "match" >Click to instantly find the best match for you!</p>
+		<button id = "buttonMatch" class = "match">Match Me!</button>
+		<p id = "match" >OR browse for fellow programmers to match with by entering criteria below!</p>
+		<label for="name"><b>Name:</b></label>
+		<input type="text" placeholder="Enter Name" name="Name" id="name"required>
+		<label for="username"><b>Username:</b></label>
+        <input type="text" placeholder="Enter Username" name="username" id="username"required> 
+        <label for="age"><b>Select age range:</b></label>
+        <select id="agerange">
+	        <option value="15">11 to 15</option>
+	        <option value="20">16 to 20</option>
+	        <option value="25">21 to 25</option>
+	        <option value="30">26 to 30</option>
+	        <option value="31">30 plus</option>
+	     </select>
+	     <br>
+	      <b>Experience Level:</b>
+	      <select id="experiencelvl">
+	        <option value="High">High</option>
+	        <option value="Medium">Medium</option>
+	        <option value="Low">Low</option>
+	        <option value="None">What is code?</option>
+	      </select>
+	      <br>
+	      
+	      <b>Preffered Language:</b>
+	      <select id="PL">
+	      	<option value="C">C</option>
+	        <option value="C#">C#</option>
+	        <option value="C++">C++</option>
+	        <option value="Java">Java</option>
+	        <option value="JavaScript">JavaScript</option>
+	        <option value="Python">Python</option>
+	        <option value="Assembly">Assembly</option>
+	        <option value="PHP">PHP</option>
+	        <option value="HTML">HTML</option>
+	        <option value="CSS">CSS</option>
+	        <option value="none">No Preference</option>
+	      </select>
+		<br><br><button id = "secondButtonMatch" class = "match">Match Me!</button>
+		<br><p id = "under"></p>
+		<ul id = "list"></ul>
+	</div>
+	<script src="js/browse.js"></script>
+</body>
+</html>

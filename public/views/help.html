@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>ProgramMe</title>
+	<script src = "https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<link rel = "stylesheet" href = "styles/styles.css">
+
+</head>
+<body>
+	<div class = "mainButtons">
+		<h3 id ="title">Program Me</h3>
+		<button class = "button" id = "login">Login</button>
+		<button class = "button" id = "signup">Sign Up</button>
+		<button class = "button" id = "browse">Browse</button>
+		<button class = "button" id = "help">Help/FAQ</button>
+		<button class = "button" id = "home">Home</button>
+	</div>
+	<div class='body'>
+    <br>
+		<fieldset>
+    <legend>Question Topics</legend>
+    <p>1. Creating an account</p>
+    <p>2. Logging in</p>   
+    <p>3. Finding a programmer</p>
+    <p>4. Chatting with programmers</p>
+    <p>5. Recovering username or password</p>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Enter a Topic</legend><br>
+    <!--
+    <label>Index:</label>
+    <input id="index" name="theIndex" type="number"/><br><br>
+-->
+
+    
+    <label>Topic number </label>
+    <input id="topic" name="theTopic" type="number" min="1" max="5"/><br><br>
+    <!--
+    <textarea id="question" value="" 
+        placeholder="Enter the question here..." form="usrform"></textarea><br><br>
+    -->
+    
+    <div class = "qbuttons">
+        <button id = "submitButton" type="button">Get Answer</button>
+    </div>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Answer</legend>
+     <p id="answer">No topic has been entered yet.</p>
+      <!--
+      <ul id="atopic" type="text" value="dafads"></ul><br>
+    <ul id="language" value="sadfadf"></ul><br>
+    <ul id="aquestion"></ul><br>
+    ul id="pp"><img src="yoda.png" alt="yoda" height="42" width="42"></ul><br>
+    <ul id="aname"></ul><br>
+    <ul id="experience"></ul><br>
+    <textarea id="answer" rows="4" cols="60" maxlength="2000" 
+        placeholder="Enter your reply here..." form="usrform"></textarea>
+    <br>
+    <input id="replyButton" type="button" value="Reply">
+  </div>
+-->
+  </fieldset>
+	</div>
+	<script src="js/help.js"></script>
+</body>
+</html>

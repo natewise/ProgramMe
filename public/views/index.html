@@ -1,0 +1,138 @@
+<html>
+<head>
+	<title>ProgramMe</title>
+	<script src = "https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="/socket.io/socket.io.js"></script>
+	<style type="text/css">
+		body{
+			/*background: linear-gradient(rgb(255,169,40),rgb(255,130,40));*/
+
+		}
+		.mainButtons{
+			background: linear-gradient(rgb(50,135,210), rgb(71,120,198));
+			padding: 40px;
+			margin:-10px;
+		
+		}
+		.button{
+			background-color: transparent;
+		    border: none;
+		    color: white;
+		    padding: 10px 22px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 20px;
+		    font-style: bold;
+
+		}
+		.button:hover{
+			 color: rgb(0,0,0);
+		}
+		#title{
+			text-align: center;
+			font-family: Arial; 
+			font-style: bold;
+			font-size: 52px;
+			color: rgb(240,240,240);
+			border-style: 3px; 
+			margin: 8px;
+			margin-bottom: 25px;
+		}
+		.mainButtons{
+			text-align: center;
+		}
+		#yee{
+			text-align: center;
+
+		}
+		#abc{
+			margin-top: 30px;
+		}
+		#messageArea{
+			display: none;
+		}
+		.circular--landscape {
+		  	display: inline-block;
+		  	position: relative;
+		  	width: 40;
+		  	height: 40;
+		  	overflow: hidden;
+		  	border-radius: 50%;
+		  	border-color: black;
+		}
+
+		#image{		
+			width: auto;
+		 	height: 100%;
+		  	margin-left: -12%;
+
+		}
+	</style>
+
+</head>
+<body>
+	<div class = "mainButtons">
+		<h3 id ="title">Program Me</h3>
+		<button class = "button" id = "login">Login</button>
+		<button class = "button" id = "signup">Sign Up</button>
+		<button class = "button" id = "browse">Browse</button>
+		<button class = "button" id = "help">Help/FAQ</button>
+		<button class = "button" id = "admin">Admin</button>
+		<button class = "button" id = "myProfile">Profile</button>
+		<button class = "button" id = "logout">Logout</button>
+	</div>
+	<div class='container'id="abc">
+		<div id="userFormArea"class="row">
+			<!-- <div class="col-md-12">
+				<form id="userForm">
+				<div class="form-group">
+                 <label>Enter Username</label>
+                 <input class="form-control"id="username">
+                 
+                 <br>
+                 <input type="submit"class="btn btn-primary"value="Login">
+				</div>
+			</form>
+			</div> -->
+		</div>
+
+		<div id="messageArea"class="row">
+
+		<div class="col-md-4">
+			<div class="well"><h2>Online Users:</h2><ul class="list-g"id="users"></ul></div>
+			<div class="col-md-20">
+			<div id="invite" class="well"><h2 id="invName">DMS:</h2><ul class="list-g"id="dm">
+			<div id="btns">
+				<!--
+			<input type="button"class="btn btn-primary"value="Accept"id="acc">
+			<input type="button"class="btn btn-primary"value="Decline"id="dec">
+		-->
+			</div></div>
+
+		</div>
+		</div>
+
+		<div class="col-md-8">
+			
+
+			<form id="messageForm">
+				<div class="form-group">
+                 <label>Enter Message</label>
+                 <textarea class="form-control"id="message" maxlength="80"></textarea>
+                 <br>
+                 <input type="submit"class="btn btn-primary"value="Send Message">
+                 
+                 <b  id="infoStufff"style="color:red;">To privately chat with a user, type pm/ *their username* *your message*
+                 </b>
+             
+				</div>
+			</form>
+			<div class="chat"id="chat"style="height:55%; overflow-y:auto;"></div>
+		</div></div>
+		
+	</div>
+	<script src="js/home.js"></script>
+</body>
+</html>

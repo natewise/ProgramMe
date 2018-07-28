@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--   -->
+<html>
+  <head>
+    <title id = "title">Sign In</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <style>
+      input[type = text] {
+        text-align: center;
+      }
+      input[type = password] {
+        text-align: center;
+      }
+      #loginButton:hover {
+        background-color:rgb(50,135,210);
+      }
+      #loginButton {
+        background-color: rgb(71,120,198);
+        border: none;
+        color: white;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-style: bold;
+      }
+      input[type=text], select {
+     padding: 5px 10px;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+  }
+  input[type=text]:focus {
+    background-color: lightblue;
+  }
+  input[type=password], select {
+     padding: 5px 10px;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+  }
+  input[type=password]:focus {
+    background-color: lightblue;
+  }
+    </style>
+  </head>
+  <body>
+    <div class = "mainButtons">
+      <h3 id ="title">Program Me</h3>
+      <button class = "button" id = "login">Login</button>
+      <button class = "button" id = "signup">Sign Up</button>
+      <button class = "button" id = "browse">Browse</button>
+      <button class = "button" id = "help">Help/FAQ</button>
+      <button class = "button" id = "home">Home</button>
+    </div>
+
+    <div class='body'>
+      <div id = 'signin'>
+        <h1>Sign In</h1>
+        <label for='username'><b>Username: </b></label><input id='username' type ='text' placeholder = 'Username'>
+        <br>
+        <label for='password'><b>Password: </b></label><input id='password' type='password' placeholder = 'Password'>
+        <br>
+        <br>
+        <button id='loginButton'>Login</button>
+      </div>
+    	
+    </div>
+    <!--Login signup browse helpfaq Home -->
+	  <script src="js/login.js"></script>
+  </body>
+</html>  

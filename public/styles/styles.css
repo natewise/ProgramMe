@@ -1,0 +1,46 @@
+	body{
+		background: linear-gradient(rgb(225,225,225),rgb(255,255,255));
+		padding-bottom: 300%;
+	}
+    .body {
+        text-align:center;
+        font-family: Arial;
+        font-size: 14px;
+        text-shadow: 10px;
+    }
+	.mainButtons{
+		background: linear-gradient(rgb(50,135,210), rgb(71,120,198));
+		margin:-8px;
+		margin-top: -33px;
+	}
+	.button{
+		background-color: transparent;
+		  	border: none;
+		  	color: white;
+		  	padding: 10px 30px;
+		  	text-align: center;
+		  	text-decoration: none;
+		  	display: inline-block;
+		  	font-size: 16px;
+		  	font-style: bold;
+		  	margin-bottom: 13px;
+		 	margin-top: -16px;
+	}
+	.button:hover{
+			color: rgb(0,0,0);
+		}
+	#title{
+		text-align: center;
+		font-family: Arial; 
+		font-style: bold;
+		font-size: 32px;
+		color: rgb(240,240,240);
+		padding-top: 16px;
+	}
+	.mainButtons{
+		text-align: center;
+	}
+	#yee{
+		text-align: center;
+
+	}
