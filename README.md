@@ -1,5 +1,5 @@
 # ProgramMe
-## NodeJS, MongoDB, JavaScript, HTML, CSS, jQuery/Ajax**
+## _NodeJS, MongoDB, JavaScript, HTML, CSS, jQuery/Ajax_
 
 **Description:** Matching service where registered users match with other users based on coding preferences
 
